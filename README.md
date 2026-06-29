@@ -14,3 +14,8 @@ Files in this release/publication:
 - [controlled_vocabularies](./controlled_vocabularies/): Folder containing SKOS Turtle files for controlled vocabularies.
 - [metadata_catalogue](./metadata_catalogue/): Folder with the EPOS-CSS metadata catalogue in GeoJSON format. This first release includes example metadata for six data instances only.
 - [metadata_submission](./metadata_submission/): Folder with two GeoJSON files containing example metadata for one and two data instances, respectively, as expected for new submissions. These files act as standalone metadata catalogues, which are quality-controlled and merged into the main catalogue.
+
+# Support
+
+For questions and support regarding the EPOS-CSS metadata model and catalogue, please submit an issue or
+contact the [repository administrator](https://github.com/daoane).
