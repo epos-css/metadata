@@ -1,0 +1,149 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://www.geodata.rocks/voc/css/source_type/air_gun> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/source_type/top_concept> ;
+    skos:definition "An air gun operates by releasing compressed air into the water, creating a high-pressure bubble that generates seismic waves. Air guns are capable of producing strong energy suitable for imaging deep beneath the seafloor. They are effective and repeatable, although they require specialized equipment."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/source_type> ;
+    skos:prefLabel "air gun"@en .
+
+<https://www.geodata.rocks/voc/css/source_type/aquapulse> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/source_type/top_concept> ;
+    skos:definition "AquaPulse delivers high-resolution, bubbleless acoustic pulses for sediment profiling. The high energy low frequency source output was able to produce acoustic images to depths of 1000m below the seabed in 10m water depth. "@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/source_type> ;
+    skos:prefLabel "aquapulse"@en .
+
+<https://www.geodata.rocks/voc/css/source_type/boomer> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/source_type/sub-bottom_profiler> ;
+    skos:definition "A Boomer is a lower-frequency seismic system (dominant frequencies between 500 Hz and 5 kHz) that is capable of penetrating up to 100m below the sea floor. It uses an induction coil and metal plate to produce acoustic pulse."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/source_type> ;
+    skos:prefLabel "boomer"@en .
+
+<https://www.geodata.rocks/voc/css/source_type/borehole_explosive> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/source_type/explosive> ;
+    skos:definition "Controlled charges such as dynamite, placed in very shallow boreholes and detonated to generate seismic waves. Primarily used in onshore surveys where high-energy waves are required to image deep subsurface structures. "@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/source_type> ;
+    skos:prefLabel "borehole explosive"@en .
+
+<https://www.geodata.rocks/voc/css/source_type/chirp> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/source_type/sub-bottom_profiler> ;
+    skos:definition "A Chirp is a high-frequency seismic system that is used for high resolution, shallow penetration surveys (usually 20-50m depending on sediment type and water depth). Chirps produce a long (low frequency) pulse, made up of multiple higher frequency waveforms."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/source_type> ;
+    skos:prefLabel "chirp"@en .
+
+<https://www.geodata.rocks/voc/css/source_type/hydrapulse> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/source_type/impact> ;
+    skos:definition "Impact of an electro-hydraulically accellerated weight generates seismic waves."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/source_type> ;
+    skos:prefLabel "hydrapulse"@en .
+
+<https://www.geodata.rocks/voc/css/source_type/parametric> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/source_type/sub-bottom_profiler> ;
+    skos:definition "A parametric echosounder generates a low-frequency pulse due to non-linear interaction of two high-intensity simultaneous pulses at higher frequencies. The resulting low frequency pulse has a very narrow beam width and can provide high resolution and comparatively deep penetration."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/source_type> ;
+    skos:prefLabel "parametric"@en .
+
+<https://www.geodata.rocks/voc/css/source_type/pinger> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/source_type/sub-bottom_profiler> ;
+    skos:definition "A pinger is a high-frequency seismic system (operating between 2 and 20 kHz), that uses a ceramic transducer to produce and detect acoustic pulses."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/source_type> ;
+    skos:prefLabel "pinger"@en .
+
+<https://www.geodata.rocks/voc/css/source_type/randomized_impulsive> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/source_type/impact> ;
+    skos:definition "A device that produces pseudo-random impacts, e.g. a modified soil-compaction tamper (\"whacker\")."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/source_type> ;
+    skos:prefLabel "randomized impulsive"@en .
+
+<https://www.geodata.rocks/voc/css/source_type/sledge_hammer> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/source_type/impact> ;
+    skos:definition "Impact of a sledge hammer generates seismic waves."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/source_type> ;
+    skos:prefLabel "sledge hammer"@en .
+
+<https://www.geodata.rocks/voc/css/source_type/sparkler> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/source_type/sub-bottom_profiler> ;
+    skos:definition "A Sparkler is a seismic source that produces an electrical spark, which vaporises the sea water around the tip of the sparker array. High-energy system can penetrate up to 1000 m below the sea floor (~50 Hz)."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/source_type> ;
+    skos:prefLabel "sparkler"@en .
+
+<https://www.geodata.rocks/voc/css/source_type/surface_explosive> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/source_type/explosive> ;
+    skos:definition "Explosive charges such as detonating cord are placed on the surface and generate seismic waves when detonated. Used in experimentally and for surveys in challenging conditions. "@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/source_type> ;
+    skos:prefLabel "surface explosive"@en .
+
+<https://www.geodata.rocks/voc/css/source_type/sweep_impact> a skos:Concept ;
+    skos:altLabel "SIST"@en,
+        "VIBSIST"@en ;
+    skos:broader <https://www.geodata.rocks/voc/css/source_type/impact> ;
+    skos:definition "A hydraulic hammer that generates a pre-programmed sequence of impacts with gradually changing time intervals between impacts."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/source_type> ;
+    skos:prefLabel "sweep impact"@en .
+
+<https://www.geodata.rocks/voc/css/source_type/vibrator> a skos:Concept ;
+    skos:altLabel "vibroseis"@en ;
+    skos:broader <https://www.geodata.rocks/voc/source_type/top_concept> ;
+    skos:definition "A carrier-mounted device that produces a continuous range of frequencies by vibrating a base plate on the ground. It generates a controlled range of frequencies by vibrating the plate against the ground in a programmed sweep. This method is widely used in land surveys, especially in areas where explosives are impractical due to environmental or safety concerns."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/source_type> ;
+    skos:prefLabel "vibrator"@en .
+
+<https://www.geodata.rocks/voc/css/source_type/water_gun> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/source_type/top_concept> ;
+    skos:definition "A water gun is a source of energy for acquisition of seismic data in water bodies. The source shoots water into the larger body of water, creating cavitation. The cavity is a vacuum and implodes without creating secondary bubbles. This provides a short time signature and higher resolution than an air gun source."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/source_type> ;
+    skos:prefLabel "water gun"@en .
+
+<https://www.geodata.rocks/voc/css/source_type/weight_drop> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/source_type/impact> ;
+    skos:definition "Impact of a larger weight generates seismic waves."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/source_type> ;
+    skos:prefLabel "weight drop"@en .
+
+<https://www.geodata.rocks/voc/css/source_type/explosive> a skos:Concept ;
+    skos:altLabel "dynamite"@en ;
+    skos:broader <https://www.geodata.rocks/voc/source_type/top_concept> ;
+    skos:definition "The detonation of controlled charges such as dynamite generate seismic waves."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/source_type> ;
+    skos:narrower <https://www.geodata.rocks/voc/css/source_type/borehole_explosive>,
+        <https://www.geodata.rocks/voc/css/source_type/surface_explosive> ;
+    skos:prefLabel "explosive"@en .
+
+<https://www.geodata.rocks/voc/css/source_type/impact> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/source_type/top_concept> ;
+    skos:definition "An impact source generates seismic energy by the impact of a heavy weight onto a ground plate (usually metal). It is usually used for shallow or small-scale surveys. Its main advantages are simplicity, portability, and low cost, though the energy generated is relatively low, limiting the depth of penetration."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/source_type> ;
+    skos:narrower <https://www.geodata.rocks/voc/css/source_type/hydrapulse>,
+        <https://www.geodata.rocks/voc/css/source_type/randomized_impulsive>,
+        <https://www.geodata.rocks/voc/css/source_type/sledge_hammer>,
+        <https://www.geodata.rocks/voc/css/source_type/sweep_impact>,
+        <https://www.geodata.rocks/voc/css/source_type/weight_drop> ;
+    skos:prefLabel "impact"@en .
+
+<https://www.geodata.rocks/voc/css/source_type/sub-bottom_profiler> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/source_type/top_concept> ;
+    skos:definition "A sub-bottom profiler is a seismic source, possibly combined with an integrated receiver system, that is designed to provide (high-resolution) images of the shallow subsurface."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/source_type> ;
+    skos:narrower <https://www.geodata.rocks/voc/css/source_type/boomer>,
+        <https://www.geodata.rocks/voc/css/source_type/chirp>,
+        <https://www.geodata.rocks/voc/css/source_type/parametric>,
+        <https://www.geodata.rocks/voc/css/source_type/pinger>,
+        <https://www.geodata.rocks/voc/css/source_type/sparkler> ;
+    skos:prefLabel "sub-bottom profiler"@en .
+
+<https://www.geodata.rocks/voc/source_type/top_concept> a skos:Concept ;
+    skos:narrower <https://www.geodata.rocks/voc/css/source_type/air_gun>,
+        <https://www.geodata.rocks/voc/css/source_type/aquapulse>,
+        <https://www.geodata.rocks/voc/css/source_type/explosive>,
+        <https://www.geodata.rocks/voc/css/source_type/impact>,
+        <https://www.geodata.rocks/voc/css/source_type/sub-bottom_profiler>,
+        <https://www.geodata.rocks/voc/css/source_type/vibrator>,
+        <https://www.geodata.rocks/voc/css/source_type/water_gun> ;
+    skos:prefLabel "Source Type"@en ;
+    skos:topConceptOf <https://www.geodata.rocks/voc/source_type> .
+
+<https://www.geodata.rocks/voc/source_type> a skos:ConceptScheme ;
+    dct:title "Source Type"@en ;
+    skos:hasTopConcept <https://www.geodata.rocks/voc/source_type/top_concept> ;
+    skos:prefLabel "Source Type"@en .
+

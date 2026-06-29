@@ -1,0 +1,152 @@
+{
+  "$schema": "../epos-css.schema.json",
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [14.6086997433108, 61.1287493080966],
+          [14.7367584162441, 61.2035886438584]
+        ]
+      },
+      "properties": {
+        "surveyName": "Orsa",
+        "campaignName": "Reflection seismic study of the Siljan Ring impact structure",
+        "acquisitionYear": 2011,
+        "surveyType": "2D seismic survey",
+        "investigationMethod": "seismic reflection",
+        "content": [
+          "pre-processing",
+          "field geometry",
+          "common midpoint stack",
+          "migration",
+          "time-to-depth conversion"
+        ],
+        "domain": "land",
+        "license": "CC BY-SA 4.0",
+        "uid": "https://doi.org/10.5878/002988",
+        "dataUri": "https://api.researchdata.se/dataset/snd1042-5/1.0/file/data?filePath=SND+1042-005-V1.0.zip",
+        "provenance": "digital",
+        "geolocated": true,
+        "size": 10.82,
+        "clientName": "Uppsala University",
+        "clientId": "https://ror.org/048a87296",
+        "contractorName": "Uppsala University",
+        "contractorId": "https://ror.org/048a87296",
+        "purpose": "research",
+        "sourceType": ["vibrator"],
+        "sensorType": ["single component"],
+        "verticalScaleUnit": "m",
+        "verticalScale": 6000.0,
+        "spread": "split spread",
+        "processing": [
+          "pre-processing",
+          "field geometry",
+          "trace editing",
+          "pre-filtering",
+          "residual statics",
+          "F-X deconvolution",
+          "normal moveout correction",
+          "trace balancing",
+          "dip moveout correction",
+          "poststack migration",
+          "time-to-depth conversion"
+        ],
+        "detailedDocumentation": "https://doi.org/10.1016/j.tecto.2012.08.040",
+        "velocityModel": true,
+        "preview": "https://api.researchdata.se/dataset/snd1042-5/1.0/file/documentation?filePath=SND+1042+-+orsa_2011_stack.jpg",
+        "spacingSource": 20.0,
+        "spacingReceiver": 10.0,
+        "samplingRate": 1.0,
+        "countSourcepoints": 542,
+        "countChannels": 320,
+        "foldNominal": 80,
+        "specification": "Vibsist 3000 source, SERCEL 428UL recording instrument",
+        "format": ["SEG-Y"],
+        "volume": 0.01,
+        "datePublication": "2018-02-27",
+        "dataProviderName": "Uppsala University",
+        "dataProviderId": "https://ror.org/048a87296",
+        "contactName": "Henning Lorenz",
+        "contactId": "https://orcid.org/0000-0001-6095-2941",
+        "contactUri": "https://www.uu.se/en/contact-and-organisation/staff?query=N0-558",
+        "dateUpdated": "2025-04-23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [14.475808650320012, 61.05845816266895],
+          [14.622992790035362, 61.01789472583767]
+        ]
+      },
+      "properties": {
+        "surveyName": "Mora",
+        "campaignName": "Reflection seismic study of the Siljan Ring impact structure",
+        "acquisitionYear": 2011,
+        "surveyType": "2D seismic survey",
+        "investigationMethod": "seismic reflection",
+        "content": [
+          "pre-processing",
+          "field geometry",
+          "common midpoint stack",
+          "migration",
+          "time-to-depth conversion"
+        ],
+        "domain": "land",
+        "license": "CC BY-SA 4.0",
+        "uid": "https://doi.org/10.5878/76ny-n692",
+        "dataUri": "https://api.researchdata.se/dataset/snd1050-5/1.0/file/data?filePath=SND1050-005-V1.0.zip",
+        "provenance": "digital",
+        "geolocated": true,
+        "size": 9.15,
+        "clientName": "Uppsala University",
+        "clientId": "https://ror.org/048a87296",
+        "contractorName": "Uppsala University",
+        "contractorId": "https://ror.org/048a87296",
+        "purpose": "research",
+        "sourceType": ["vibrator"],
+        "sensorType": ["single component"],
+        "verticalScaleUnit": "m",
+        "verticalScale": 6000.0,
+        "spread": "split spread",
+        "processing": [
+          "pre-processing",
+          "field geometry",
+          "trace editing",
+          "pre-filtering",
+          "residual statics",
+          "F-X deconvolution",
+          "normal moveout correction",
+          "trace balancing",
+          "dip moveout correction",
+          "poststack migration",
+          "time-to-depth conversion"
+        ],
+        "detailedDocumentation": "https://doi.org/10.1016/j.tecto.2012.08.040",
+        "velocityModel": true,
+        "preview": "https://api.researchdata.se/dataset/snd1050-5/1.0/file/documentation?filePath=SND+1050+-+mora_2011_stack.jpg",
+        "spacingSource": 20.0,
+        "spacingReceiver": 10.0,
+        "samplingRate": 1.0,
+        "countSourcepoints": 391,
+        "countChannels": 320,
+        "foldNominal": 80,
+        "specification": "Vibsist 3000 source, SERCEL 428UL recording instrument",
+        "format": ["SEG-Y"],
+        "volume": 0.01,
+        "datePublication": "2018-09-19",
+        "dataProviderName": "Uppsala University",
+        "dataProviderId": "https://ror.org/048a87296",
+        "contactName": "Henning Lorenz",
+        "contactId": "https://orcid.org/0000-0001-6095-2941",
+        "contactUri": "https://www.uu.se/en/contact-and-organisation/staff?query=N0-558",
+        "dateUpdated": "2025-07-21"
+      }
+    }
+  ]
+}

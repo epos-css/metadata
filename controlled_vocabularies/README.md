@@ -1,0 +1,3 @@
+# Controlled Source Seismics controlled vocabularies
+
+This folder contains the controlled vocabularies for the Controlled Source Seismics (CSS) metadata model and metadata catalogue. In this initial publication, the vocabularies are provided as SKOS Turtle files only. In future publications of the metadata catalogue, the vocabularies will be registered at a suitable registry. In the meantime, the vocabularies can be browsed at the [EPOS Sweden vocabulary hub](https://www.geodata.rocks/voc/css/index.html).

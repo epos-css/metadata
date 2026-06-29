@@ -1,0 +1,312 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.geodata.rocks/epos-css/schema/v1.0/epos-css.schema.json",
+  "version": "1.0.0",
+  "title": "EPOS CSS metadata schema",
+  "description": "Implementation of the EPOS CSS metadata model, version m1.0, in GeoJSON controlled by a JSON Schema. To be used for both new metadata records and the whole metadata catalogue.",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["FeatureCollection"]
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["Feature"]
+          },
+          "geometry": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["Point", "LineString", "Polygon", "MultiLineString"]
+              },
+              "coordinates": {
+                "type": "array",
+                "description": "Coordinates as per GeoJSON specification (RFC 7946)"
+              }
+            },
+            "if": {
+              "properties": { "type": { "const": "Point" } }
+            },
+            "then": {
+              "properties": {
+                "coordinates": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 3,
+                  "items": { "type": "number" }
+                }
+              }
+            },
+            "else": {
+              "if": {
+                "properties": { "type": { "const": "LineString" } }
+              },
+              "then": {
+                "properties": {
+                  "coordinates": {
+                    "type": "array",
+                    "minItems": 2,
+                    "items": {
+                      "type": "array",
+                      "minItems": 2,
+                      "maxItems": 3,
+                      "items": { "type": "number" }
+                    }
+                  }
+                }
+              },
+              "else": {
+                "if": {
+                  "properties": { "type": { "const": "Polygon" } }
+                },
+                "then": {
+                  "properties": {
+                    "coordinates": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "array",
+                        "minItems": 4,
+                        "items": {
+                          "type": "array",
+                          "minItems": 2,
+                          "maxItems": 3,
+                          "items": { "type": "number" }
+                        }
+                      }
+                    }
+                  }
+                },
+                "else": {
+                  "if": {
+                    "properties": { "type": { "const": "MultiLineString" } }
+                  },
+                  "then": {
+                    "properties": {
+                      "coordinates": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                          "type": "array",
+                          "minItems": 2,
+                          "items": {
+                            "type": "array",
+                            "minItems": 2,
+                            "maxItems": 3,
+                            "items": { "type": "number" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "required": ["type", "coordinates"]
+          },
+          "properties": {
+            "type": "object",
+            "properties": {
+              "surveyName": { "type": "string" },
+              "campaignName": { "type": "string" },
+              "acquisitionYear": { "type": "integer" },
+              "surveyType": {
+                "type": "string",
+                "enum": ["2D seismic survey", "3D seismic survey", "4D seismic survey", "VSP"]
+              },
+              "investigationMethod": {
+                "type": "string",
+                "enum": [
+                  "multi-channel analysis of surface waves",
+                  "near-surface seismic",
+                  "seismic reflection",
+                  "seismic refraction",
+                  "wide-angle reflection and refraction"
+                ]
+              },
+              "content": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "F-X deconvolution", "amplitude recovery", "common depth point stack",
+                    "common midpoint stack", "data preparation", "decoding", "deconvolution",
+                    "demultiple", "demultiplexing", "dip moveout correction", "elevation statics",
+                    "field geometry", "gain control", "gain recovery", "gain removal",
+                    "horizontal stack", "interpretation", "migration", "normal moveout correction",
+                    "poststack filtering", "poststack migration", "poststack mix", "pre-filtering",
+                    "pre-processing", "prestack migration", "processing", "raw data",
+                    "residual statics", "static correction", "time-to-depth conversion",
+                    "trace balancing", "trace editing", "velocity analysis"
+                  ]
+                },
+                "minItems": 1
+              },
+              "domain": {
+                "type": "string",
+                "enum": ["lake", "land", "river", "sea"]
+              },
+              "license": {
+                "type": "string",
+                "enum": [
+                  "CC BY 4.0", "CC BY-NC 4.0", "CC BY-NC-ND 4.0", "CC BY-NC-SA 4.0",
+                  "CC BY-ND 4.0", "CC BY-SA 4.0", "CC0 1.0", "missing"
+                ]
+              },
+              "provenance": {
+                "type": "string",
+                "enum": [
+                  "analogue", "analogue to digital", "digital", "missing", "paper", "paper to digital"
+                ]
+              },
+              "uid": { "type": "string", "format": "uri" },
+              "dataUri": { "type": "string", "format": "uri" },
+              "geolocated": { "type": "boolean" },
+              "size": { "type": "number" },
+              "dataProviderName": { "type": "string" },
+              "contactName": { "type": "string" },
+              "contactUri": { "type": "string", "format": "uri" },
+              "dateUpdated": { "type": "string", "format": "date" },
+              "clientName": { "type": "string" },
+              "clientId": { "type": "string", "format": "uri" },
+              "contractorName": { "type": "string" },
+              "contractorId": { "type": "string", "format": "uri" },
+              "purpose": {
+                "type": "string",
+                "enum": [
+                  "civil engineering",
+                  "exploitation of fossil energy resources",
+                  "exploitation of natural underground storage space",
+                  "exploitation of natural underground storage space for storage of fluids",
+                  "exploration and exploitation of energy resources",
+                  "exploration and exploitation of fossil energy resources",
+                  "exploration and exploitation of natural resources",
+                  "exploration and exploitation of natural underground storage space",
+                  "exploration and exploitation of nonmetallic mineral deposits",
+                  "exploration of fossil energy resources",
+                  "exploration of geothermal energy",
+                  "exploration of natural underground storage space",
+                  "exploration of natural underground storage space for storage of fluids",
+                  "exploration of natural underground storage space for storage of solids",
+                  "geological research and mapping",
+                  "geotechnical investigation",
+                  "groundwater exploration",
+                  "lithosphere scale study",
+                  "ore exploration",
+                  "research"
+                ]
+              },
+              "sourceType": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "air gun", "aquapulse", "boomer", "borehole explosive", "chirp", "explosive",
+                    "hydrapulse", "impact", "parametric", "pinger", "randomized impulsive",
+                    "sledge hammer", "sparkler", "sub-bottom profiler", "surface explosive",
+                    "sweep impact", "vibrator", "water gun", "weight drop"
+                  ]
+                },
+                "minItems": 1
+              },
+              "sourceParameters": { "type": "string" },
+              "sensorType": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "distributed acoustic sensing", "multiple component", "single component"
+                  ]
+                },
+                "minItems": 1
+              },
+              "sensorParameters": { "type": "string" },
+              "verticalScale": { "type": "number" },
+              "verticalScaleUnit": {
+                "type": "string",
+                "enum": ["m", "s"]
+              },
+              "spread": {
+                "type": "string",
+                "enum": [
+                  "2D spread", "3D spread", "L-spread", "T-spread", "cross-spread",
+                  "inline offset", "midpoint line", "single-ended ", "slanted spread", "split spread"
+                ]
+              },
+              "processing": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "F-X deconvolution", "amplitude recovery", "common depth point stack",
+                    "common midpoint stack", "data preparation", "decoding", "deconvolution",
+                    "demultiple", "demultiplexing", "dip moveout correction", "elevation statics",
+                    "field geometry", "gain control", "gain recovery", "gain removal",
+                    "horizontal stack", "interpretation", "migration", "normal moveout correction",
+                    "poststack filtering", "poststack migration", "poststack mix", "pre-filtering",
+                    "pre-processing", "prestack migration", "processing", "raw data",
+                    "residual statics", "static correction", "time-to-depth conversion",
+                    "trace balancing", "trace editing", "velocity analysis"
+                  ]
+                },
+                "minItems": 1
+              },
+              "description": { "type": "string" },
+              "detailedDocumentation": { "type": "string", "format": "uri" },
+              "velocityModel": { "type": "boolean" },
+              "preview": { "type": "string", "format": "uri" },
+              "spacingSource": { "type": "number" },
+              "spacingReceiver": { "type": "number" },
+              "samplingRate": { "type": "number" },
+              "countSourcepoints": { "type": "integer" },
+              "countReceiverpoints": { "type": "integer" },
+              "offsetNear": { "type": "number" },
+              "offsetFar": { "type": "number" },
+              "countChannels": { "type": "integer" },
+              "foldNominal": { "type": "integer" },
+              "specification": { "type": "string" },
+              "format": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "GS", "HDF5", "PDF", "SEED & miniSEED", "SEG-2", "SEG-D", "SEG-Y", "TIFF", "netCDF4"
+                  ]
+                },
+                "minItems": 1
+              },
+              "volume": { "type": "number" },
+              "legalConstraints": { "type": "string" },
+              "datePublication": { "type": "string", "format": "date" },
+              "dateMoratorium": { "type": "string", "format": "date" },
+              "dataProviderId": { "type": "string", "format": "uri" },
+              "contactId": { "type": "string", "format": "uri" }
+            },
+            "required": [
+              "surveyName", "campaignName", "acquisitionYear", "surveyType",
+              "investigationMethod", "content", "domain", "license", "provenance",
+              "geolocated", "size", "dataProviderName", "contactName", "contactUri", "dateUpdated"
+            ],
+            "dependentRequired": {
+              "verticalScale": ["verticalScaleUnit"],
+              "verticalScaleUnit": ["verticalScale"]
+            },
+            "anyOf": [
+              { "required": ["uid"] },
+              { "required": ["dataUri"] }
+            ]
+          }
+        },
+        "required": ["type", "geometry", "properties"]
+      }
+    }
+  },
+  "required": ["type", "features"]
+}

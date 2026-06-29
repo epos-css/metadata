@@ -1,0 +1,68 @@
+{
+  "$schema": "../epos-css.schema.json",
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [13.2973, 43.8202],
+          [13.5733, 44.005]
+        ]
+      },
+      "properties": {
+        "surveyName": "B-402",
+        "campaignName": "Zone B",
+        "acquisitionYear": 1967,
+        "surveyType": "2D seismic survey",
+        "investigationMethod": "seismic reflection",
+        "content": [
+          "processing",
+          "normal moveout correction",
+          "deconvolution",
+          "poststack filtering"
+        ],
+        "domain": "sea",
+        "license": "CC BY 4.0",
+        "uid": "https://www.videpi.com/videpi/sismica/dettaglio.asp?codice=B-402",
+        "provenance": "paper",
+        "geolocated": true,
+        "size": 30.22,
+        "clientName": "Italian Government",
+        "contractorName": "AGIP - Geophysical Service International Ltd",
+        "contractorId": "https://ror.org/038483r84",
+        "purpose": "exploration and exploitation of natural resources",
+        "sourceType": ["water gun"],
+        "sourceParameters": "6-fold off end; Cable length 1600 m; Charge Size - 50 lb; average seis Depth 15 m",
+        "sensorType": ["multiple component"],
+        "verticalScaleUnit": "s",
+        "verticalScale": 5.0,
+        "spread": "2D spread",
+        "processing": [
+          "deconvolution",
+          "gain recovery",
+          "processing"
+        ],
+        "detailedDocumentation": "https://doi.org/10.1029/2022GL102299",
+        "velocityModel": false,
+        "preview": "https://www.geodata.rocks/epos-css/preview/Linea_B-402_preview.jpg",
+        "spacingSource": 144.0,
+        "spacingReceiver": 67.0,
+        "samplingRate": 2.0,
+        "countSourcepoints": 230,
+        "offsetFar": 144.0,
+        "foldNominal": 6,
+        "format": ["SEG-Y"],
+        "volume": 0.01,
+        "datePublication": "1967-10-30",
+        "dataProviderName": "Sismolab 3D",
+        "dataProviderId": "https://sismolab3d.ingv.it/index.php/en/",
+        "contactName": "Francesco Maesano",
+        "contactId": "https://orcid.org/0000-0002-5652-1548",
+        "contactUri": "https://data.ingv.it/it/person/963",
+        "dateUpdated": "2023-11-30"
+      }
+    }
+  ]
+}

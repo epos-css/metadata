@@ -1,0 +1,75 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://www.geodata.rocks/voc/css/format/GS> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/format/netCDF4> ;
+    skos:definition "The Geophysical Survey format (GS, developed by USGS and adopted by EGS) is a practice for storing data from geophysical surveys in a common universial format with rules on included documentation and metadata. https://doi.org/10.5066/P9XNQVGQ"@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/format> ;
+    skos:prefLabel "GS"@en .
+
+<https://www.geodata.rocks/voc/css/format/PDF> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/format/top_concept> ;
+    skos:definition "Portable Document Format (ISO 32000)"@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/format> ;
+    skos:prefLabel "PDF"@en .
+
+<https://www.geodata.rocks/voc/css/format/SEED_miniSEED> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/format/top_concept> ;
+    skos:definition "Formats for storing and exchanging seismological data, such as time series, pressure, temperature, and tilt. miniSEED is a subset of the Standard for the Exchange of Earthquake Data (SEED) format. https://docs.fdsn.org/projects/miniseed3/en/latest/"@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/format> ;
+    skos:prefLabel "SEED & miniSEED"@en .
+
+<https://www.geodata.rocks/voc/css/format/SEG-2> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/format/top_concept> ;
+    skos:definition "A file format developed by the Society of Exploration Geophysicists (SEG) that is intended for recording of shallow surveys. It is an open standard, and is controlled by the SEG Technical Standards Committee. https://library.seg.org/seg-technical-standards"@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/format> ;
+    skos:prefLabel "SEG-2"@en .
+
+<https://www.geodata.rocks/voc/css/format/SEG-D> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/format/top_concept> ;
+    skos:definition "A file format developed by the Society of Exploration Geophysicists (SEG) that is intended for seismic recording. It is an open standard, and is controlled by the SEG Technical Standards Committee. https://library.seg.org/seg-technical-standards"@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/format> ;
+    skos:prefLabel "SEG-D"@en .
+
+<https://www.geodata.rocks/voc/css/format/SEG-Y> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/format/top_concept> ;
+    skos:definition "Exchange file format developed by the Society of Exploration Geophysicists (SEG) for the distribution, storing and processing of seismic data. It is an open standard, and is controlled by the SEG Technical Standards Committee. https://library.seg.org/seg-technical-standards"@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/format> ;
+    skos:prefLabel "SEG-Y"@en .
+
+<https://www.geodata.rocks/voc/css/format/TIFF> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/format/top_concept> ;
+    skos:definition "Tagged Image File Format (https://www.itu.int/itudoc/itu-t/com16/tiff-fx/docs/tiff6.pdf)"@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/format> ;
+    skos:prefLabel "TIFF"@en .
+
+<https://www.geodata.rocks/voc/css/format/HDF5> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/format/top_concept> ;
+    skos:definition "The Hierarchical Data Format (HDF) is designed to store and organise large amounts of data and is frequently used in HPC applications. HDF5 has been used to store controlled seismic data, amongst others. https://www.hdfgroup.org/solutions/hdf5/ HDF5 was adapted as an international open standard by the Open Geospatial Consortium (OGC) https://www.ogc.org/publications/standard/hdf5/"@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/format> ;
+    skos:narrower <https://www.geodata.rocks/voc/css/format/netCDF4> ;
+    skos:prefLabel "HDF5"@en .
+
+<https://www.geodata.rocks/voc/css/format/netCDF4> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/format/HDF5> ;
+    skos:definition "NetCDF (Network Common Data Form) is a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data. It is used by many scientific institutions, including those involved in seismic tomography. https://www.unidata.ucar.edu/software/netcdf/ NetCDF was adapted as an international open standard by the Open Geospatial Consortium (OGC) https://www.ogc.org/publications/standard/netcdf/"@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/format> ;
+    skos:narrower <https://www.geodata.rocks/voc/css/format/GS> ;
+    skos:prefLabel "netCDF4"@en .
+
+<https://www.geodata.rocks/voc/format/top_concept> a skos:Concept ;
+    skos:narrower <https://www.geodata.rocks/voc/css/format/HDF5>,
+        <https://www.geodata.rocks/voc/css/format/PDF>,
+        <https://www.geodata.rocks/voc/css/format/SEED_miniSEED>,
+        <https://www.geodata.rocks/voc/css/format/SEG-2>,
+        <https://www.geodata.rocks/voc/css/format/SEG-D>,
+        <https://www.geodata.rocks/voc/css/format/SEG-Y>,
+        <https://www.geodata.rocks/voc/css/format/TIFF> ;
+    skos:prefLabel "Format"@en ;
+    skos:topConceptOf <https://www.geodata.rocks/voc/format> .
+
+<https://www.geodata.rocks/voc/format> a skos:ConceptScheme ;
+    dct:title "Format"@en ;
+    skos:hasTopConcept <https://www.geodata.rocks/voc/format/top_concept> ;
+    skos:prefLabel "Format"@en .
+

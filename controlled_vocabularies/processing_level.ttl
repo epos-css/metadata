@@ -1,0 +1,249 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://www.geodata.rocks/voc/processing/amplitude_control> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/gain_control> ;
+    skos:definition "Technique for recovering the amplitude of a seismic trace or reflection event (https://wiki.seg.org/wiki/Dictionary:Amplitude_recovery)."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "amplitude recovery"@en .
+
+<https://www.geodata.rocks/voc/processing/common_depth_point_stack> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/horizontal_stack> ;
+    skos:definition """"Common Depth Point (CDP) stacking is
+a seismic data processing technique that sums multiple traces sharing a common reflection point to improve signal-to-noise ratio. CDP specifically accounts for dipping reflectors.\""""@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "common depth point stack"@en .
+
+<https://www.geodata.rocks/voc/processing/common_midpoint_stack> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/horizontal_stack> ;
+    skos:definition "The \"mid point\" that is the halfway between source and receiver on the surface is defined for each trace. All traces that have a common mid point (CMP) are then stacked."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "common midpoint stack"@en .
+
+<https://www.geodata.rocks/voc/processing/decoding> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/data_preparation> ;
+    skos:definition "The data are decoded with the the source's signal signature."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "decoding"@en .
+
+<https://www.geodata.rocks/voc/processing/deconvolution> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/data_preparation> ;
+    skos:definition "The data are corrected for the fequency-dependent response of the instruments."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "deconvolution"@en .
+
+<https://www.geodata.rocks/voc/processing/demultiple> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/pre-processing> ;
+    skos:definition "Removal of multiples, the result of strong reflections that act as secondary seismic sources and interfer with the primary signal."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "demultiple"@en .
+
+<https://www.geodata.rocks/voc/processing/demultiplexing> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/data_preparation> ;
+    skos:definition "The data are transposed into seismic traces."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "demultiplexing"@en .
+
+<https://www.geodata.rocks/voc/processing/dip_moveout_correction> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/processing> ;
+    skos:definition "Dip Moveout Correction (DMO) is the correction of the seismic gathers for the distortion on dipping reflectors."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "dip moveout correction"@en .
+
+<https://www.geodata.rocks/voc/processing/elevation_statics> a skos:Concept ;
+    skos:altLabel "refraction statics"@en ;
+    skos:broader <https://www.geodata.rocks/voc/processing/static_correction> ;
+    skos:definition "Travel times are transposed to the seismic datum level of the survey."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "elevation statics"@en .
+
+<https://www.geodata.rocks/voc/processing/field_geometry> a skos:Concept ;
+    skos:altLabel "shot geometry"@en ;
+    skos:broader <https://www.geodata.rocks/voc/processing/static_correction> ;
+    skos:definition "The field geometry was applied to the data set."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "field geometry"@en .
+
+<https://www.geodata.rocks/voc/processing/fx-deconvolution> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/processing> ;
+    skos:definition "Random noise removal by filtering in the Fourier domain."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "F-X deconvolution"@en .
+
+<https://www.geodata.rocks/voc/processing/gain_recovery> a skos:Concept ;
+    skos:altLabel "correction for spherical convergence"@en ;
+    skos:broader <https://www.geodata.rocks/voc/processing/gain_control> ;
+    skos:definition "A correction for spherical divergence was applied to the data set (https://wiki.seg.org/wiki/Dictionary:Spherical_divergence)."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "gain recovery"@en .
+
+<https://www.geodata.rocks/voc/processing/gain_removal> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/gain_control> ;
+    skos:definition "Restore the true relative amplitude after previous gain manipulation."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "gain removal"@en .
+
+<https://www.geodata.rocks/voc/processing/interpretation> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing_level/top_concept> ;
+    skos:definition "A person has interpreted a seismic data set."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "interpretation"@en .
+
+<https://www.geodata.rocks/voc/processing/normal_moveout_correction> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/processing> ;
+    skos:definition "Normal Movout Correction (NMO) is the correction of the seimic gathers for the distortion on horizontal reflectors."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "normal moveout correction"@en .
+
+<https://www.geodata.rocks/voc/processing/poststack_filtering> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/processing> ;
+    skos:definition "Filtering that is applied after stacking, to remove noise and improve the seismic image."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "poststack filtering"@en .
+
+<https://www.geodata.rocks/voc/processing/poststack_migration> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/migration> ;
+    skos:definition "Correction of the subsurface geometry by applying the seismic velocity model to the stacked data."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "poststack migration"@en .
+
+<https://www.geodata.rocks/voc/processing/poststack_mix> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/processing> ;
+    skos:definition "Increase signal to noise ratio by reducing horizontal resolution (averaging of adjacent traces)."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "poststack mix"@en .
+
+<https://www.geodata.rocks/voc/processing/pre-filtering> a skos:Concept ;
+    skos:altLabel "noise removal"@en ;
+    skos:broader <https://www.geodata.rocks/voc/processing/pre-processing> ;
+    skos:definition "Noise (cable/swell/linear/...) is removed from the data set."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "pre-filtering"@en .
+
+<https://www.geodata.rocks/voc/processing/prestack_migration> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/migration> ;
+    skos:definition "Correction of the subsurface geometry by applying the seisimic velocity model to individual traces."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "prestack migration"@en .
+
+<https://www.geodata.rocks/voc/processing/raw_data> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing_level/top_concept> ;
+    skos:definition "The primary data collected by the recording system."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "raw data"@en .
+
+<https://www.geodata.rocks/voc/processing/residual_statics> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/static_correction> ;
+    skos:definition "Compensates travel times for minor errors, e.g due to near-surface irregularities (weathering layer) and side effects of pre-processing steps."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "residual statics"@en .
+
+<https://www.geodata.rocks/voc/processing/time_to_depth_conversion> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/processing> ;
+    skos:definition "Convert the seismic data from the time domain (traveltime) to depth below seismic datum."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "time-to-depth conversion"@en .
+
+<https://www.geodata.rocks/voc/processing/trace_balancing> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/processing> ;
+    skos:definition "Balancing of all trace amplitudes."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "trace balancing"@en .
+
+<https://www.geodata.rocks/voc/processing/trace_editing> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/pre-processing> ;
+    skos:definition "The quality of the data set was improved by correcting/deleting certain traces."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "trace editing"@en .
+
+<https://www.geodata.rocks/voc/processing/velocity_analysis> a skos:Concept ;
+    skos:altLabel "velocity model"@en ;
+    skos:broader <https://www.geodata.rocks/voc/processing/processing> ;
+    skos:definition "Estimation of the seismic velocities for the survey."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:prefLabel "velocity analysis"@en .
+
+<https://www.geodata.rocks/voc/processing/horizontal_stack> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/processing> ;
+    skos:definition "Traces are stacked horizontally to enhance data."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:narrower <https://www.geodata.rocks/voc/processing/common_depth_point_stack>,
+        <https://www.geodata.rocks/voc/processing/common_midpoint_stack> ;
+    skos:prefLabel "horizontal stack"@en .
+
+<https://www.geodata.rocks/voc/processing/migration> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/processing> ;
+    skos:definition "Correction of the subsurface geometry by applying the seisimic velocity model to the seismic data set."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:narrower <https://www.geodata.rocks/voc/processing/poststack_migration>,
+        <https://www.geodata.rocks/voc/processing/prestack_migration> ;
+    skos:prefLabel "migration"@en .
+
+<https://www.geodata.rocks/voc/processing/data_preparation> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/pre-processing> ;
+    skos:definition "Preparatory work that transforms recorded raw data into a workable data set."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:narrower <https://www.geodata.rocks/voc/processing/decoding>,
+        <https://www.geodata.rocks/voc/processing/deconvolution>,
+        <https://www.geodata.rocks/voc/processing/demultiplexing> ;
+    skos:prefLabel "data preparation"@en .
+
+<https://www.geodata.rocks/voc/processing/gain_control> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/pre-processing> ;
+    skos:definition "The gain of the data was corrected (manually or automaticly)."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:narrower <https://www.geodata.rocks/voc/processing/amplitude_control>,
+        <https://www.geodata.rocks/voc/processing/gain_recovery>,
+        <https://www.geodata.rocks/voc/processing/gain_removal> ;
+    skos:prefLabel "gain control"@en .
+
+<https://www.geodata.rocks/voc/processing/static_correction> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing/pre-processing> ;
+    skos:definition "Corrections applied to seismic data to compensate for the effects of variations in elevation, near-surface low-velocity-layer (weathering) thickness, weathering velocity, and/or reference to a datum (https://wiki.seg.org/wiki/Dictionary:Static_corrections,_statics). "@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:narrower <https://www.geodata.rocks/voc/processing/elevation_statics>,
+        <https://www.geodata.rocks/voc/processing/field_geometry>,
+        <https://www.geodata.rocks/voc/processing/residual_statics> ;
+    skos:prefLabel "static correction"@en .
+
+<https://www.geodata.rocks/voc/processing_level/top_concept> a skos:Concept ;
+    skos:narrower <https://www.geodata.rocks/voc/processing/interpretation>,
+        <https://www.geodata.rocks/voc/processing/pre-processing>,
+        <https://www.geodata.rocks/voc/processing/processing>,
+        <https://www.geodata.rocks/voc/processing/raw_data> ;
+    skos:prefLabel "Processing Level"@en ;
+    skos:topConceptOf <https://www.geodata.rocks/voc/processing_level> .
+
+<https://www.geodata.rocks/voc/processing/pre-processing> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing_level/top_concept> ;
+    skos:definition "Preparatory work that compensates for survey-specific properties."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:narrower <https://www.geodata.rocks/voc/processing/data_preparation>,
+        <https://www.geodata.rocks/voc/processing/demultiple>,
+        <https://www.geodata.rocks/voc/processing/gain_control>,
+        <https://www.geodata.rocks/voc/processing/pre-filtering>,
+        <https://www.geodata.rocks/voc/processing/static_correction>,
+        <https://www.geodata.rocks/voc/processing/trace_editing> ;
+    skos:prefLabel "pre-processing"@en .
+
+<https://www.geodata.rocks/voc/processing/processing> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/processing_level/top_concept> ;
+    skos:definition "Processing steps that aim at producing and improving the seismic image of the subsurface."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/processing_level> ;
+    skos:narrower <https://www.geodata.rocks/voc/processing/dip_moveout_correction>,
+        <https://www.geodata.rocks/voc/processing/fx-deconvolution>,
+        <https://www.geodata.rocks/voc/processing/horizontal_stack>,
+        <https://www.geodata.rocks/voc/processing/migration>,
+        <https://www.geodata.rocks/voc/processing/normal_moveout_correction>,
+        <https://www.geodata.rocks/voc/processing/poststack_filtering>,
+        <https://www.geodata.rocks/voc/processing/poststack_mix>,
+        <https://www.geodata.rocks/voc/processing/time_to_depth_conversion>,
+        <https://www.geodata.rocks/voc/processing/trace_balancing>,
+        <https://www.geodata.rocks/voc/processing/velocity_analysis> ;
+    skos:prefLabel "processing"@en .
+
+<https://www.geodata.rocks/voc/processing_level> a skos:ConceptScheme ;
+    dct:title "Processing Level"@en ;
+    skos:hasTopConcept <https://www.geodata.rocks/voc/processing_level/top_concept> ;
+    skos:prefLabel "Processing Level"@en .
+

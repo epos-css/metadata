@@ -1,0 +1,42 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://www.geodata.rocks/voc/css/survey_type/4D_seismic> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/survey_type/top_concept> ;
+    skos:definition "A 4D seismic survey is a time series of 3D seismic surveys over the same volume of the subsurface and the same acquisition parameters. It is used to monitor changes in the subsurface over time."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/survey_type> ;
+    skos:prefLabel "4D seismic survey"@en ;
+    skos:related <https://www.geodata.rocks/voc/css/survey_type/3D_seismic> .
+
+<https://www.geodata.rocks/voc/css/survey_type/VSP> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/survey_type/top_concept> ;
+    skos:definition "Vertical Seismic Profiling (VSP) are controlled source seismic measurements that utilise a (near-)vertical wellbore. Most commonly, sensors are placed at multiple levels in the borehole and the source is activated at the surface, e.g. next to the surface point of the borehole (Zero-offset VSP), or moves away from the borehole (walk away VSP). 3D data can also be acquired. VSP is often used for improving surface seismics by correlating it with the borehole geology."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/survey_type> ;
+    skos:prefLabel "VSP"@en .
+
+<https://www.geodata.rocks/voc/css/survey_type/2D_seismic> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/survey_type/top_concept> ;
+    skos:definition "A 2D seismic survey records the response of the subsurface to elastic waves emitted by a controlled seismic source along a (crooked) line on the Earth's surface. After processing, it provides a two-dimensional picture of the subsurface. "@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/survey_type> ;
+    skos:prefLabel "2D seismic survey"@en .
+
+<https://www.geodata.rocks/voc/css/survey_type/3D_seismic> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/survey_type/top_concept> ;
+    skos:definition "A 3D seismic survey records the response of the subsurface to elastic waves emitted by a controlled seismic source over an area of the Earth's surface. It generally consists of tightly spaced 2D lines, crossing 2D lines or acquisition on a grid. After processing, it provides a three-dimensional picture of the subsurface."@en ;
+    skos:inScheme <https://www.geodata.rocks/voc/survey_type> ;
+    skos:prefLabel "3D seismic survey"@en ;
+    skos:related <https://www.geodata.rocks/voc/css/survey_type/2D_seismic> .
+
+<https://www.geodata.rocks/voc/survey_type> a skos:ConceptScheme ;
+    dct:title "Survey Type"@en ;
+    skos:hasTopConcept <https://www.geodata.rocks/voc/survey_type/top_concept> ;
+    skos:prefLabel "Survey Type"@en .
+
+<https://www.geodata.rocks/voc/survey_type/top_concept> a skos:Concept ;
+    skos:narrower <https://www.geodata.rocks/voc/css/survey_type/2D_seismic>,
+        <https://www.geodata.rocks/voc/css/survey_type/3D_seismic>,
+        <https://www.geodata.rocks/voc/css/survey_type/4D_seismic>,
+        <https://www.geodata.rocks/voc/css/survey_type/VSP> ;
+    skos:prefLabel "Survey Type"@en ;
+    skos:topConceptOf <https://www.geodata.rocks/voc/survey_type> .
+
