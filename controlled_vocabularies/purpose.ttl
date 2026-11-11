@@ -5,95 +5,95 @@
     skos:altLabel "reservoir monitoring, extraction"@en ;
     skos:broader <https://www.geodata.rocks/voc/css/purpose/exploration_and_exploitation_of_fossil_energy_resources> ;
     skos:definition "Examination of the subsurface for monitoring the extraction of fossil energy resources."@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/purpose> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/purpose> ;
     skos:prefLabel "exploitation of fossil energy resources"@en .
 
 <https://www.geodata.rocks/voc/css/purpose/exploitation_of_natural_underground_storage_space_for_storage_of_fluids> a skos:Concept ;
     skos:altLabel "reservoir monitoring, storage"@en ;
     skos:broader <https://www.geodata.rocks/voc/css/purpose/exploitation_of_natural_underground_storage_space> ;
     skos:definition "Examination of the subsurface for monitoring the use of subsurface storage space for fluids (liquids, gases)."@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/purpose> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/purpose> ;
     skos:prefLabel "exploitation of natural underground storage space for storage of fluids"@en .
 
 <https://www.geodata.rocks/voc/css/purpose/exploration_and_exploitation_of_nonmetallic_mineral_deposits> a skos:Concept ;
     skos:broader <https://www.geodata.rocks/voc/css/purpose/exploration_and_exploitation_of_natural_resources> ;
     skos:definition "Examination of the subsurface for assessing the availability and planning for excavation of nonmetallic mineral deposits, mainly for construction purposes, building stones, cement and ceramic or glass industry."@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/purpose> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/purpose> ;
     skos:prefLabel "exploration and exploitation of nonmetallic mineral deposits"@en .
 
 <https://www.geodata.rocks/voc/css/purpose/exploration_of_fossil_energy_resources> a skos:Concept ;
     skos:altLabel "oil and gas exploration"@en ;
     skos:broader <https://www.geodata.rocks/voc/css/purpose/exploration_and_exploitation_of_fossil_energy_resources> ;
     skos:definition "Examination of the subsurface for assessing the availability of fossil energy resources."@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/purpose> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/purpose> ;
     skos:prefLabel "exploration of fossil energy resources"@en .
 
 <https://www.geodata.rocks/voc/css/purpose/exploration_of_geothermal_energy> a skos:Concept ;
     skos:broader <https://www.geodata.rocks/voc/css/purpose/exploration_and_exploitation_of_energy_resources> ;
     skos:definition "Examination of the subsurface for assessing the availability of geothermal energy resources and design of geothermal heat pumps."@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/purpose> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/purpose> ;
     skos:prefLabel "exploration of geothermal energy"@en .
 
 <https://www.geodata.rocks/voc/css/purpose/exploration_of_natural_underground_storage_space_for_storage_of_fluids> a skos:Concept ;
     skos:broader <https://www.geodata.rocks/voc/css/purpose/exploration_of_natural_underground_storage_space> ;
     skos:definition "Examination of the subsurface's ability to store fluid materials (liquids, gases)."@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/purpose> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/purpose> ;
     skos:prefLabel "exploration of natural underground storage space for storage of fluids"@en .
 
 <https://www.geodata.rocks/voc/css/purpose/exploration_of_natural_underground_storage_space_for_storage_of_solids> a skos:Concept ;
     skos:broader <https://www.geodata.rocks/voc/css/purpose/exploration_of_natural_underground_storage_space> ;
     skos:definition "Examination of the subsurface's ability to store solid materials (in excavated space)."@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/purpose> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/purpose> ;
     skos:prefLabel "exploration of natural underground storage space for storage of solids"@en .
 
 <https://www.geodata.rocks/voc/css/purpose/geological_research_and_mapping> a skos:Concept ;
     skos:broader <https://www.geodata.rocks/voc/css/purpose/research> ;
     skos:definition "An investigation to increase the general knowledge about the geological entities, including the composition and structure of rocks and soils beneath the surface, helping to identify e.g. stratigraphic discontinuity, weak zones or fractures that could be prone to seismic activity."@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/purpose> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/purpose> ;
     skos:prefLabel "geological research and mapping"@en .
 
 <https://www.geodata.rocks/voc/css/purpose/geotechnical_investigation> a skos:Concept ;
     skos:broader <https://www.geodata.rocks/voc/css/purpose/civil_engineering> ;
     skos:definition "Investigations to obtain information on the physical properties of soil earthworks and foundations for proposed structures and for repair of distress to earthworks and structures caused by subsurface conditions."@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/purpose> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/purpose> ;
     skos:prefLabel "geotechnical investigation"@en .
 
 <https://www.geodata.rocks/voc/css/purpose/groundwater_exploration> a skos:Concept ;
     skos:broader <https://www.geodata.rocks/voc/css/purpose/exploration_and_exploitation_of_natural_resources> ;
     skos:definition "Examination of the subsurface to locate and characterise aquifers."@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/purpose> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/purpose> ;
     skos:prefLabel "groundwater exploration"@en .
 
 <https://www.geodata.rocks/voc/css/purpose/lithosphere_scale_study> a skos:Concept ;
     skos:broader <https://www.geodata.rocks/voc/css/purpose/research> ;
     skos:definition "Study of the whole crust and upper mantle (lithosphere)."@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/purpose> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/purpose> ;
     skos:prefLabel "lithosphere scale study"@en .
 
 <https://www.geodata.rocks/voc/css/purpose/ore_exploration> a skos:Concept ;
     skos:broader <https://www.geodata.rocks/voc/css/purpose/exploration_and_exploitation_of_natural_resources> ;
     skos:definition "Examination of the subsurface for assessing the availability and planning the extraction of ore deposits."@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/purpose> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/purpose> ;
     skos:prefLabel "ore exploration"@en .
 
 <https://www.geodata.rocks/voc/css/purpose/civil_engineering> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/purpose/top_concept> ;
+    skos:broader <https://www.geodata.rocks/voc/css/purpose/top_concept> ;
     skos:definition "The professional engineering discipline that deals with the design, construction, and maintenance of the physical and naturally built environment."@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/purpose> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/purpose> ;
     skos:narrower <https://www.geodata.rocks/voc/css/purpose/geotechnical_investigation> ;
     skos:prefLabel "civil engineering"@en .
 
 <https://www.geodata.rocks/voc/css/purpose/exploitation_of_natural_underground_storage_space> a skos:Concept ;
     skos:broader <https://www.geodata.rocks/voc/css/purpose/exploration_and_exploitation_of_natural_underground_storage_space> ;
     skos:definition "Examination of the subsurface for monitoring the use of subsurface storage space."@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/purpose> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/purpose> ;
     skos:narrower <https://www.geodata.rocks/voc/css/purpose/exploitation_of_natural_underground_storage_space_for_storage_of_fluids> ;
     skos:prefLabel "exploitation of natural underground storage space"@en .
 
 <https://www.geodata.rocks/voc/css/purpose/exploration_and_exploitation_of_energy_resources> a skos:Concept ;
     skos:broader <https://www.geodata.rocks/voc/css/purpose/exploration_and_exploitation_of_natural_resources> ;
     skos:definition "Examination of the subsurface for assessing the availability of energy resources and planning/monitoring the extraction thereof."@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/purpose> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/purpose> ;
     skos:narrower <https://www.geodata.rocks/voc/css/purpose/exploration_and_exploitation_of_fossil_energy_resources>,
         <https://www.geodata.rocks/voc/css/purpose/exploration_of_geothermal_energy> ;
     skos:prefLabel "exploration and exploitation of energy resources"@en .
@@ -101,15 +101,15 @@
 <https://www.geodata.rocks/voc/css/purpose/exploration_and_exploitation_of_fossil_energy_resources> a skos:Concept ;
     skos:broader <https://www.geodata.rocks/voc/css/purpose/exploration_and_exploitation_of_energy_resources> ;
     skos:definition "Examination of the subsurface for assessing the availability of fossil energy resources and planning/monitoring the extraction thereof."@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/purpose> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/purpose> ;
     skos:narrower <https://www.geodata.rocks/voc/css/purpose/exploitation_of_fossil_energy_resources>,
         <https://www.geodata.rocks/voc/css/purpose/exploration_of_fossil_energy_resources> ;
     skos:prefLabel "exploration and exploitation of fossil energy resources"@en .
 
 <https://www.geodata.rocks/voc/css/purpose/exploration_and_exploitation_of_natural_underground_storage_space> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/purpose/top_concept> ;
+    skos:broader <https://www.geodata.rocks/voc/css/purpose/top_concept> ;
     skos:definition "Examination of the subsurface's ability to store various materials and monitor the exploitation of the storage space (reservoir)."@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/purpose> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/purpose> ;
     skos:narrower <https://www.geodata.rocks/voc/css/purpose/exploitation_of_natural_underground_storage_space>,
         <https://www.geodata.rocks/voc/css/purpose/exploration_of_natural_underground_storage_space> ;
     skos:prefLabel "exploration and exploitation of natural underground storage space"@en .
@@ -117,39 +117,39 @@
 <https://www.geodata.rocks/voc/css/purpose/exploration_of_natural_underground_storage_space> a skos:Concept ;
     skos:broader <https://www.geodata.rocks/voc/css/purpose/exploration_and_exploitation_of_natural_underground_storage_space> ;
     skos:definition "Examination of the subsurface's ability to store various materials."@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/purpose> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/purpose> ;
     skos:narrower <https://www.geodata.rocks/voc/css/purpose/exploration_of_natural_underground_storage_space_for_storage_of_fluids>,
         <https://www.geodata.rocks/voc/css/purpose/exploration_of_natural_underground_storage_space_for_storage_of_solids> ;
     skos:prefLabel "exploration of natural underground storage space"@en .
 
 <https://www.geodata.rocks/voc/css/purpose/research> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/purpose/top_concept> ;
+    skos:broader <https://www.geodata.rocks/voc/css/purpose/top_concept> ;
     skos:definition "Research is \"creative and systematic work undertaken to increase the stock of knowledge\"."@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/purpose> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/purpose> ;
     skos:narrower <https://www.geodata.rocks/voc/css/purpose/geological_research_and_mapping>,
         <https://www.geodata.rocks/voc/css/purpose/lithosphere_scale_study> ;
     skos:prefLabel "research"@en .
 
 <https://www.geodata.rocks/voc/css/purpose/exploration_and_exploitation_of_natural_resources> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/purpose/top_concept> ;
+    skos:broader <https://www.geodata.rocks/voc/css/purpose/top_concept> ;
     skos:definition "Examination of the subsurface for the purpose of discovery and identification of natural resources, including the assessment of their importance and the evaluation of their economic potential, and planning/monitoring their extraction."@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/purpose> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/purpose> ;
     skos:narrower <https://www.geodata.rocks/voc/css/purpose/exploration_and_exploitation_of_energy_resources>,
         <https://www.geodata.rocks/voc/css/purpose/exploration_and_exploitation_of_nonmetallic_mineral_deposits>,
         <https://www.geodata.rocks/voc/css/purpose/groundwater_exploration>,
         <https://www.geodata.rocks/voc/css/purpose/ore_exploration> ;
     skos:prefLabel "exploration and exploitation of natural resources"@en .
 
-<https://www.geodata.rocks/voc/purpose/top_concept> a skos:Concept ;
+<https://www.geodata.rocks/voc/css/purpose/top_concept> a skos:Concept ;
     skos:narrower <https://www.geodata.rocks/voc/css/purpose/civil_engineering>,
         <https://www.geodata.rocks/voc/css/purpose/exploration_and_exploitation_of_natural_resources>,
         <https://www.geodata.rocks/voc/css/purpose/exploration_and_exploitation_of_natural_underground_storage_space>,
         <https://www.geodata.rocks/voc/css/purpose/research> ;
     skos:prefLabel "Purpose"@en ;
-    skos:topConceptOf <https://www.geodata.rocks/voc/purpose> .
+    skos:topConceptOf <https://www.geodata.rocks/voc/css/purpose> .
 
-<https://www.geodata.rocks/voc/purpose> a skos:ConceptScheme ;
+<https://www.geodata.rocks/voc/css/purpose> a skos:ConceptScheme ;
     dct:title "Purpose"@en ;
-    skos:hasTopConcept <https://www.geodata.rocks/voc/purpose/top_concept> ;
+    skos:hasTopConcept <https://www.geodata.rocks/voc/css/purpose/top_concept> ;
     skos:prefLabel "Purpose"@en .
 

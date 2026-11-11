@@ -2,59 +2,59 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 <http://www.opengis.net/def/nil/OGC/0/missing> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/license/top_concept> ;
+    skos:broader <https://www.geodata.rocks/voc/css/license/top_concept> ;
     skos:definition "The correct value is not readily available to the sender of this data. Furthermore, a correct value may not exist."@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/license> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/license> ;
     skos:prefLabel "missing"@en .
 
 <https://www.geodata.rocks/voc/css/license/CC0_1.0> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/license/top_concept> ;
+    skos:broader <https://www.geodata.rocks/voc/css/license/top_concept> ;
     skos:definition "Creative Commons Zero 1.0 Universal (Public Domain)"@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/license> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/license> ;
     skos:prefLabel "CC0 1.0"@en .
 
 <https://www.geodata.rocks/voc/css/license/CC_BY-NC-ND_4.0> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/license/top_concept> ;
+    skos:broader <https://www.geodata.rocks/voc/css/license/top_concept> ;
     skos:definition "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International"@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/license> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/license> ;
     skos:prefLabel "CC BY-NC-ND 4.0"@en .
 
 <https://www.geodata.rocks/voc/css/license/CC_BY-NC-SA_4.0> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/license/top_concept> ;
+    skos:broader <https://www.geodata.rocks/voc/css/license/top_concept> ;
     skos:definition "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International"@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/license> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/license> ;
     skos:prefLabel "CC BY-NC-SA 4.0"@en .
 
 <https://www.geodata.rocks/voc/css/license/CC_BY-NC_4.0> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/license/top_concept> ;
+    skos:broader <https://www.geodata.rocks/voc/css/license/top_concept> ;
     skos:definition "Creative Commons Attribution-NonCommercial 4.0 International"@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/license> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/license> ;
     skos:prefLabel "CC BY-NC 4.0"@en .
 
 <https://www.geodata.rocks/voc/css/license/CC_BY-ND_4.0> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/license/top_concept> ;
+    skos:broader <https://www.geodata.rocks/voc/css/license/top_concept> ;
     skos:definition "Creative Commons Attribution-NoDerivatives 4.0 International"@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/license> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/license> ;
     skos:prefLabel "CC BY-ND 4.0"@en .
 
 <https://www.geodata.rocks/voc/css/license/CC_BY-SA_4.0> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/license/top_concept> ;
+    skos:broader <https://www.geodata.rocks/voc/css/license/top_concept> ;
     skos:definition "Creative Commons Attribution-ShareAlike 4.0 International"@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/license> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/license> ;
     skos:prefLabel "CC BY-SA 4.0"@en .
 
 <https://www.geodata.rocks/voc/css/license/CC_BY_4.0> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/license/top_concept> ;
+    skos:broader <https://www.geodata.rocks/voc/css/license/top_concept> ;
     skos:definition "Creative Commons Attribution 4.0 International"@en ;
-    skos:inScheme <https://www.geodata.rocks/voc/license> ;
+    skos:inScheme <https://www.geodata.rocks/voc/css/license> ;
     skos:prefLabel "CC BY 4.0"@en .
 
-<https://www.geodata.rocks/voc/license> a skos:ConceptScheme ;
+<https://www.geodata.rocks/voc/css/license> a skos:ConceptScheme ;
     dct:title "License"@en ;
-    skos:hasTopConcept <https://www.geodata.rocks/voc/license/top_concept> ;
+    skos:hasTopConcept <https://www.geodata.rocks/voc/css/license/top_concept> ;
     skos:prefLabel "License"@en .
 
-<https://www.geodata.rocks/voc/license/top_concept> a skos:Concept ;
+<https://www.geodata.rocks/voc/css/license/top_concept> a skos:Concept ;
     skos:narrower <http://www.opengis.net/def/nil/OGC/0/missing>,
         <https://www.geodata.rocks/voc/css/license/CC0_1.0>,
         <https://www.geodata.rocks/voc/css/license/CC_BY-NC-ND_4.0>,
@@ -64,5 +64,5 @@
         <https://www.geodata.rocks/voc/css/license/CC_BY-SA_4.0>,
         <https://www.geodata.rocks/voc/css/license/CC_BY_4.0> ;
     skos:prefLabel "License"@en ;
-    skos:topConceptOf <https://www.geodata.rocks/voc/license> .
+    skos:topConceptOf <https://www.geodata.rocks/voc/css/license> .
 
