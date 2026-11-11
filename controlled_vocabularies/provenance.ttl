@@ -7,32 +7,32 @@
     skos:inScheme <https://www.geodata.rocks/voc/css/provenance> ;
     skos:prefLabel "missing"@en .
 
-<https://www.geodata.rocks/voc/css/css/provenance/analogue> a skos:Concept ;
+<https://www.geodata.rocks/voc/css/provenance/analogue> a skos:Concept ;
     skos:broader <https://www.geodata.rocks/voc/css/provenance/top_concept> ;
     skos:definition "Analogue data (not digitised)."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/provenance> ;
     skos:prefLabel "analogue"@en .
 
-<https://www.geodata.rocks/voc/css/css/provenance/analogue_to_digital> a skos:Concept ;
+<https://www.geodata.rocks/voc/css/provenance/analogue_to_digital> a skos:Concept ;
     skos:broader <https://www.geodata.rocks/voc/css/provenance/top_concept> ;
     skos:definition "Digitised analogue recording."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/provenance> ;
     skos:prefLabel "analogue to digital"@en .
 
-<https://www.geodata.rocks/voc/css/css/provenance/digital> a skos:Concept ;
+<https://www.geodata.rocks/voc/css/provenance/digital> a skos:Concept ;
     skos:broader <https://www.geodata.rocks/voc/css/provenance/top_concept> ;
     skos:definition "Fully digital recording/workflow."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/provenance> ;
     skos:prefLabel "digital"@en .
 
-<https://www.geodata.rocks/voc/css/css/provenance/paper> a skos:Concept ;
+<https://www.geodata.rocks/voc/css/provenance/paper> a skos:Concept ;
     skos:altLabel "raster copy"@en ;
     skos:broader <https://www.geodata.rocks/voc/css/provenance/top_concept> ;
     skos:definition "Paper printout or scanned paper printout."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/provenance> ;
     skos:prefLabel "paper"@en .
 
-<https://www.geodata.rocks/voc/css/css/provenance/paper_to_digital> a skos:Concept ;
+<https://www.geodata.rocks/voc/css/provenance/paper_to_digital> a skos:Concept ;
     skos:broader <https://www.geodata.rocks/voc/css/provenance/top_concept> ;
     skos:definition "Digitised waveforms from scanned paper printout."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/provenance> ;
@@ -45,11 +45,11 @@
 
 <https://www.geodata.rocks/voc/css/provenance/top_concept> a skos:Concept ;
     skos:narrower <http://www.opengis.net/def/nil/OGC/0/missing>,
-        <https://www.geodata.rocks/voc/css/css/provenance/analogue>,
-        <https://www.geodata.rocks/voc/css/css/provenance/analogue_to_digital>,
-        <https://www.geodata.rocks/voc/css/css/provenance/digital>,
-        <https://www.geodata.rocks/voc/css/css/provenance/paper>,
-        <https://www.geodata.rocks/voc/css/css/provenance/paper_to_digital> ;
+        <https://www.geodata.rocks/voc/css/provenance/analogue>,
+        <https://www.geodata.rocks/voc/css/provenance/analogue_to_digital>,
+        <https://www.geodata.rocks/voc/css/provenance/digital>,
+        <https://www.geodata.rocks/voc/css/provenance/paper>,
+        <https://www.geodata.rocks/voc/css/provenance/paper_to_digital> ;
     skos:prefLabel "Provenance"@en ;
     skos:topConceptOf <https://www.geodata.rocks/voc/css/provenance> .
 
