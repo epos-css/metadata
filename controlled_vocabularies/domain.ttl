@@ -1,44 +1,43 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<https://www.geodata.rocks/voc/css/domain/lake> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/css/domain/top_concept> ;
+<https://www.geodata.rocks/voc/css/domain/en/lake> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/domain/en/top_concept> ;
     skos:definition "A lake is an area filled with water, localized in a basin, surrounded by land, and distinct from any river or other outlet that serves to feed or drain the lake."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/domain> ;
     skos:prefLabel "lake"@en .
 
-<https://www.geodata.rocks/voc/css/domain/land> a skos:Concept ;
+<https://www.geodata.rocks/voc/css/domain/en/land> a skos:Concept ;
     skos:altLabel "onshore"@en,
         "terrestrial"@en ;
-    skos:broader <https://www.geodata.rocks/voc/css/domain/top_concept> ;
+    skos:broader <https://www.geodata.rocks/voc/css/domain/en/top_concept> ;
     skos:definition "Land, also called dry land, ground, or earth, is the solid terrestrial surface of planet Earth that is not submerged by the ocean or another body of water."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/domain> ;
     skos:prefLabel "land"@en .
 
-<https://www.geodata.rocks/voc/css/domain/river> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/css/domain/top_concept> ;
+<https://www.geodata.rocks/voc/css/domain/en/river> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/domain/en/top_concept> ;
     skos:definition "A river is a natural flowing watercourse, usually freshwater, flowing towards an ocean, sea, lake or another river. In some cases, a river flows into the ground and becomes dry at the end of its course without reaching another body of water."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/domain> ;
     skos:prefLabel "river"@en .
 
-<https://www.geodata.rocks/voc/css/domain/sea> a skos:Concept ;
+<https://www.geodata.rocks/voc/css/domain/en/sea> a skos:Concept ;
     skos:altLabel "marine"@en,
         "offshore"@en ;
-    skos:broader <https://www.geodata.rocks/voc/css/domain/top_concept> ;
+    skos:broader <https://www.geodata.rocks/voc/css/domain/en/top_concept> ;
     skos:definition "The sea, connected as the world ocean or simply the ocean, is the body of salty water that covers approximately 71% of the Earth's surface."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/domain> ;
     skos:prefLabel "sea"@en .
 
 <https://www.geodata.rocks/voc/css/domain> a skos:ConceptScheme ;
     dct:title "Domain"@en ;
-    skos:hasTopConcept <https://www.geodata.rocks/voc/css/domain/top_concept> ;
+    skos:hasTopConcept <https://www.geodata.rocks/voc/css/domain/en/top_concept> ;
     skos:prefLabel "Domain"@en .
 
-<https://www.geodata.rocks/voc/css/domain/top_concept> a skos:Concept ;
-    skos:narrower <https://www.geodata.rocks/voc/css/domain/lake>,
-        <https://www.geodata.rocks/voc/css/domain/land>,
-        <https://www.geodata.rocks/voc/css/domain/river>,
-        <https://www.geodata.rocks/voc/css/domain/sea> ;
+<https://www.geodata.rocks/voc/css/domain/en/top_concept> a skos:Concept ;
+    skos:narrower <https://www.geodata.rocks/voc/css/domain/en/lake>,
+        <https://www.geodata.rocks/voc/css/domain/en/land>,
+        <https://www.geodata.rocks/voc/css/domain/en/river>,
+        <https://www.geodata.rocks/voc/css/domain/en/sea> ;
     skos:prefLabel "Domain"@en ;
     skos:topConceptOf <https://www.geodata.rocks/voc/css/domain> .
-

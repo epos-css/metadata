@@ -1,82 +1,81 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<https://www.geodata.rocks/voc/css/spread/L> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/css/spread/2D> ;
+<https://www.geodata.rocks/voc/css/spread/en/L> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/spread/en/2D> ;
     skos:definition "The shot point is offset sideway at a right angle to one end of the array of detectors."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/spread> ;
     skos:prefLabel "L-spread"@en .
 
-<https://www.geodata.rocks/voc/css/spread/T> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/css/spread/2D> ;
+<https://www.geodata.rocks/voc/css/spread/en/T> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/spread/en/2D> ;
     skos:definition "The shot point is offset sideway at a right angle to the array of detectors, with detectors being on either side of the shotpoint."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/spread> ;
     skos:prefLabel "T-spread"@en .
 
-<https://www.geodata.rocks/voc/css/spread/cross> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/css/spread/3D> ;
+<https://www.geodata.rocks/voc/css/spread/en/cross> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/spread/en/3D> ;
     skos:definition "Source and receivers are located along orthogonal source and receiver lines."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/spread> ;
     skos:prefLabel "cross-spread"@en .
 
-<https://www.geodata.rocks/voc/css/spread/inline_offset> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/css/spread/2D> ;
+<https://www.geodata.rocks/voc/css/spread/en/inline_offset> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/spread/en/2D> ;
     skos:definition "The inline shot point is offset to one side of the array of detectors."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/spread> ;
     skos:prefLabel "inline offset"@en .
 
-<https://www.geodata.rocks/voc/css/spread/midpoint_line> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/css/spread/3D> ;
+<https://www.geodata.rocks/voc/css/spread/en/midpoint_line> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/spread/en/3D> ;
     skos:definition "Source and receivers are located along parallel source and receiver lines."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/spread> ;
     skos:prefLabel "midpoint line"@en .
 
-<https://www.geodata.rocks/voc/css/spread/single-ended> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/css/spread/2D> ;
+<https://www.geodata.rocks/voc/css/spread/en/single-ended> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/spread/en/2D> ;
     skos:definition "The shot point is located at one end of the array of detectors."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/spread> ;
     skos:prefLabel "single-ended"@en .
 
-<https://www.geodata.rocks/voc/css/spread/slanted> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/css/spread/3D> ;
+<https://www.geodata.rocks/voc/css/spread/en/slanted> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/spread/en/3D> ;
     skos:definition "Source and receivers are located along lines that are neither parallel nor orthogonal."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/spread> ;
     skos:prefLabel "slanted spread"@en .
 
-<https://www.geodata.rocks/voc/css/spread/split> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/css/spread/2D> ;
+<https://www.geodata.rocks/voc/css/spread/en/split> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/spread/en/2D> ;
     skos:definition "Detectors are distributed on either side of the shot point."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/spread> ;
     skos:prefLabel "split spread"@en .
 
-<https://www.geodata.rocks/voc/css/spread/top_concept> a skos:Concept ;
-    skos:narrower <https://www.geodata.rocks/voc/css/spread/2D>,
-        <https://www.geodata.rocks/voc/css/spread/3D> ;
+<https://www.geodata.rocks/voc/css/spread/en/top_concept> a skos:Concept ;
+    skos:narrower <https://www.geodata.rocks/voc/css/spread/en/2D>,
+        <https://www.geodata.rocks/voc/css/spread/en/3D> ;
     skos:prefLabel "Spread"@en ;
     skos:topConceptOf <https://www.geodata.rocks/voc/css/spread> .
 
-<https://www.geodata.rocks/voc/css/spread/3D> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/css/spread/top_concept> ;
+<https://www.geodata.rocks/voc/css/spread/en/3D> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/spread/en/top_concept> ;
     skos:definition "A summary term for all spread types used in 3D seismic surveys."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/spread> ;
-    skos:narrower <https://www.geodata.rocks/voc/css/spread/cross>,
-        <https://www.geodata.rocks/voc/css/spread/midpoint_line>,
-        <https://www.geodata.rocks/voc/css/spread/slanted> ;
+    skos:narrower <https://www.geodata.rocks/voc/css/spread/en/cross>,
+        <https://www.geodata.rocks/voc/css/spread/en/midpoint_line>,
+        <https://www.geodata.rocks/voc/css/spread/en/slanted> ;
     skos:prefLabel "3D spread"@en .
 
-<https://www.geodata.rocks/voc/css/spread/2D> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/css/spread/top_concept> ;
+<https://www.geodata.rocks/voc/css/spread/en/2D> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/spread/en/top_concept> ;
     skos:definition "A summary term for all spread types used in 2D seismic surveys."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/spread> ;
-    skos:narrower <https://www.geodata.rocks/voc/css/spread/L>,
-        <https://www.geodata.rocks/voc/css/spread/T>,
-        <https://www.geodata.rocks/voc/css/spread/inline_offset>,
-        <https://www.geodata.rocks/voc/css/spread/single-ended>,
-        <https://www.geodata.rocks/voc/css/spread/split> ;
+    skos:narrower <https://www.geodata.rocks/voc/css/spread/en/L>,
+        <https://www.geodata.rocks/voc/css/spread/en/T>,
+        <https://www.geodata.rocks/voc/css/spread/en/inline_offset>,
+        <https://www.geodata.rocks/voc/css/spread/en/single-ended>,
+        <https://www.geodata.rocks/voc/css/spread/en/split> ;
     skos:prefLabel "2D spread"@en .
 
 <https://www.geodata.rocks/voc/css/spread> a skos:ConceptScheme ;
     dct:title "Spread"@en ;
-    skos:hasTopConcept <https://www.geodata.rocks/voc/css/spread/top_concept> ;
+    skos:hasTopConcept <https://www.geodata.rocks/voc/css/spread/en/top_concept> ;
     skos:prefLabel "Spread"@en .
-

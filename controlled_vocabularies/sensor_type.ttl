@@ -1,33 +1,32 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<https://www.geodata.rocks/voc/css/sensor_type/distributed_acoustic_sensing> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/css/sensor_type/top_concept> ;
+<https://www.geodata.rocks/voc/css/sensor_type/en/distributed_acoustic_sensing> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/sensor_type/en/top_concept> ;
     skos:definition "Distributed Acoustic Sensing (DAS) provides ultra-high resolution seismic data (sub meter spatial spacing) with high temporal sampling frequency (kHz). It is recorded using fiber optic cables as sensors."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/sensor_type> ;
     skos:prefLabel "distributed acoustic sensing"@en .
 
-<https://www.geodata.rocks/voc/css/sensor_type/multiple_component> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/css/sensor_type/top_concept> ;
+<https://www.geodata.rocks/voc/css/sensor_type/en/multiple_component> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/sensor_type/en/top_concept> ;
     skos:definition "The sensors are sensitive to displacement in the three orthogonal spatial directions (X, Y, Z)."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/sensor_type> ;
     skos:prefLabel "multiple component"@en .
 
-<https://www.geodata.rocks/voc/css/sensor_type/single_component> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/css/sensor_type/top_concept> ;
+<https://www.geodata.rocks/voc/css/sensor_type/en/single_component> a skos:Concept ;
+    skos:broader <https://www.geodata.rocks/voc/css/sensor_type/en/top_concept> ;
     skos:definition "The sensors are sensitive to displacement in a single spatial direction, usually vertical (Z)."@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/sensor_type> ;
     skos:prefLabel "single component"@en .
 
 <https://www.geodata.rocks/voc/css/sensor_type> a skos:ConceptScheme ;
     dct:title "Sensor Type"@en ;
-    skos:hasTopConcept <https://www.geodata.rocks/voc/css/sensor_type/top_concept> ;
+    skos:hasTopConcept <https://www.geodata.rocks/voc/css/sensor_type/en/top_concept> ;
     skos:prefLabel "Sensor Type"@en .
 
-<https://www.geodata.rocks/voc/css/sensor_type/top_concept> a skos:Concept ;
-    skos:narrower <https://www.geodata.rocks/voc/css/sensor_type/distributed_acoustic_sensing>,
-        <https://www.geodata.rocks/voc/css/sensor_type/multiple_component>,
-        <https://www.geodata.rocks/voc/css/sensor_type/single_component> ;
+<https://www.geodata.rocks/voc/css/sensor_type/en/top_concept> a skos:Concept ;
+    skos:narrower <https://www.geodata.rocks/voc/css/sensor_type/en/distributed_acoustic_sensing>,
+        <https://www.geodata.rocks/voc/css/sensor_type/en/multiple_component>,
+        <https://www.geodata.rocks/voc/css/sensor_type/en/single_component> ;
     skos:prefLabel "Sensor Type"@en ;
     skos:topConceptOf <https://www.geodata.rocks/voc/css/sensor_type> .
-

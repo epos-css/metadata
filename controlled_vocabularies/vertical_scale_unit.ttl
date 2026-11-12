@@ -2,25 +2,24 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 <http://qudt.org/vocab/unit/M> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/css/vertical_scale_unit/top_concept> ;
+    skos:broader <https://www.geodata.rocks/voc/css/vertical_scale_unit/en/top_concept> ;
     skos:definition "penetration depth (The depth of the seismic section [m])"@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/vertical_scale_unit> ;
     skos:prefLabel "m"@en .
 
 <https://qudt.org/vocab/unit/SEC> a skos:Concept ;
-    skos:broader <https://www.geodata.rocks/voc/css/vertical_scale_unit/top_concept> ;
+    skos:broader <https://www.geodata.rocks/voc/css/vertical_scale_unit/en/top_concept> ;
     skos:definition "recording length (The length of recording after source activation [s])"@en ;
     skos:inScheme <https://www.geodata.rocks/voc/css/vertical_scale_unit> ;
     skos:prefLabel "s"@en .
 
 <https://www.geodata.rocks/voc/css/vertical_scale_unit> a skos:ConceptScheme ;
     dct:title "Vertical Scale Unit"@en ;
-    skos:hasTopConcept <https://www.geodata.rocks/voc/css/vertical_scale_unit/top_concept> ;
+    skos:hasTopConcept <https://www.geodata.rocks/voc/css/vertical_scale_unit/en/top_concept> ;
     skos:prefLabel "Vertical Scale Unit"@en .
 
-<https://www.geodata.rocks/voc/css/vertical_scale_unit/top_concept> a skos:Concept ;
+<https://www.geodata.rocks/voc/css/vertical_scale_unit/en/top_concept> a skos:Concept ;
     skos:narrower <http://qudt.org/vocab/unit/M>,
         <https://qudt.org/vocab/unit/SEC> ;
     skos:prefLabel "Vertical Scale Unit"@en ;
     skos:topConceptOf <https://www.geodata.rocks/voc/css/vertical_scale_unit> .
-
