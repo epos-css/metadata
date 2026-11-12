@@ -3,7 +3,7 @@
 ### How to submit metadata to the Controlled Source Seismic (CSS) metadata catalogue:
 1) Compile your metadata according to the CSS metadata model. \
    This can be done directly in GeoJSON with the help of a suitable code editor, or in a spreadsheet or a database. \
-   Tip: LLMs can help you to transform your data to GeoJSON if you provide clearly structured input data with unambiguous attribute naming (best to follow the naming of the data model) and a link to the [JSON-schema](../epos-css-schema.json). \
+   Tip: LLMs can help you to transform your data to GeoJSON if you provide clearly structured input data with unambiguous attribute naming (best to follow the naming of the data model) and a link to the [JSON-schema](../epos-css.schema.json). \
    For existing databases, map their data model to the metadata model and export to the mapped attribute names. In case you have questions, ask for help or guidance (see contact information on the repository page.) 
 2) Create a new branch with the name "metadata_<your_individual_name>". Use this branch only for the submission of metadata.
 3) Commit your metadata file(s) to the this folder ("metadata_submission") and create a pull request when you are
