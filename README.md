@@ -9,7 +9,7 @@ For the purpose of providing data discovery through the EPOS Platform, the metad
 For a detailed account of the motivation, community, and development, refer to the journal publication (DOI: UPDATE BEFORE PUBLICATION).
 
 Files in this release/publication:
-- [epos-css-documentation.pdf](./epos-css.schema.json): Documentation of the metadata model.
+- [epos-css-documentation.pdf](./epos-css-documentation.pdf): Documentation of the metadata model.
 - [epos-css-schema.json](./epos-css.schema.json): JSON-schema (https://json-schema.org/draft/2020-12) implementing the EPOS-CSS metadata model in GeoJSON.
 - [controlled_vocabularies](./controlled_vocabularies/): Folder containing SKOS Turtle files for controlled vocabularies.
 - [metadata_catalogue](./metadata_catalogue/): Folder with the EPOS-CSS metadata catalogue in GeoJSON format. This first release includes example metadata for six data instances only.
